@@ -43,30 +43,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Skywalker: &quot;Yoda, are we going in the right direction?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-dE-mJI">
+                                <rect key="frame" x="19.5" y="326.5" width="336.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds8-OD-njc">
-                                <rect key="frame" x="320" y="575" width="32" height="30"/>
+                                <rect key="frame" x="280" y="575" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchViews:" destination="bPl-v9-6Lm" eventType="touchUpInside" id="40g-bU-ssu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-dE-mJI">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="Dol-Ya-wb6"/>
+                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="ltw-w8-E3B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hPZ-NV-ds5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good" id="rvB-0P-0kE"/>
+                    <connections>
+                        <outlet property="goodLabel" destination="UX6-dE-mJI" id="CVD-zk-Q9Z"/>
+                        <outlet property="goodNextButton" destination="ds8-OD-njc" id="ahO-99-dUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wi-Ms-naB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="32"/>
+            <point key="canvasLocation" x="1144.8" y="31.934032983508249"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cce-f0-PPU">

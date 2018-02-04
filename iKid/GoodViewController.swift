@@ -33,6 +33,9 @@ class GoodViewController: UIViewController {
     */
     
     fileprivate var goodView : GoodViewController!
+    @IBOutlet weak var goodLabel: UILabel!
+    @IBOutlet weak var goodNextButton: UIButton!
+    var side = 0
     
     fileprivate func goodBuilder() {
         if goodView == nil {
@@ -49,17 +52,22 @@ class GoodViewController: UIViewController {
         UIView.beginAnimations("View Flip", context: nil)
         UIView.setAnimationDuration(0.4)
         UIView.setAnimationCurve(.easeInOut)
-        
-        if goodView != nil &&
-            goodView?.view.superview != nil {
-            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
-            goodView.view.frame = view.frame
-        }
-        else {
+
+        if (side == 0) {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             goodView.view.frame = view.frame
+            goodLabel.text = "Yoda: Off course, we are."
+            goodNextButton.setTitle("Back", for: UIControlState.normal)
+            UIView.commitAnimations()
+            side = 1
+        } else {
+            UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
+            goodView.view.frame = view.frame
+            goodLabel.text = "Luke Skywalker: Yoda, are we going in the right direction?"
+            goodNextButton.setTitle("Next", for: UIControlState.normal)
+            UIView.commitAnimations()
+            side = 0
         }
-        UIView.commitAnimations()
     }
     
 }
