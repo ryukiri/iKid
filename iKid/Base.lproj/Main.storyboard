@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -18,15 +23,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to iKid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMq-lq-Q7v">
-                                <rect key="frame" x="125" y="323" width="124" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iHa-52-Frv">
+                                <rect key="frame" x="72.5" y="302" width="230" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iKid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMq-lq-Q7v">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a category to continue." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2y-cF-pLP">
+                                        <rect key="frame" x="0.5" y="42.5" width="229" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iHa-52-Frv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JpU-qQ-Mnp"/>
+                            <constraint firstItem="iHa-52-Frv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o9u-97-Y2c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="ANX-K4-86a"/>
@@ -51,15 +70,18 @@
                                     <action selector="switchViews:" destination="neL-Ch-nW0" eventType="touchUpInside" id="ZqZ-Md-pS0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dad1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
-                                <rect key="frame" x="68" y="323" width="251" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
+                                <rect key="frame" x="168" y="323" width="39" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerY" secondItem="Yey-Cz-qOg" secondAttribute="centerY" id="F8f-GV-omo"/>
+                            <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerX" secondItem="Yey-Cz-qOg" secondAttribute="centerX" id="P3T-2K-rn7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gGe-nJ-xO4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dad" id="JVw-JD-f4f"/>
@@ -97,7 +119,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="6L3-dn-x8D"/>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="Dol-Ya-wb6"/>
+                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="NzI-wP-2tz"/>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="ltw-w8-E3B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hPZ-NV-ds5"/>
@@ -120,9 +144,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pun1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-3c-flD">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pun1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-3c-flD">
+                                <rect key="frame" x="169.5" y="323" width="36.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,6 +160,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pIs-3c-flD" firstAttribute="centerY" secondItem="rcT-8M-ern" secondAttribute="centerY" id="KjS-44-2Mw"/>
+                            <constraint firstItem="pIs-3c-flD" firstAttribute="centerX" secondItem="rcT-8M-ern" secondAttribute="centerX" id="xwj-pC-neR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gDY-QM-iTa"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" id="A7f-CJ-Rrf"/>
