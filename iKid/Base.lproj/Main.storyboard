@@ -75,6 +75,43 @@
             </objects>
             <point key="canvasLocation" x="1144.8" y="31.934032983508249"/>
         </scene>
+        <!--Pun-->
+        <scene sceneID="Gdf-RC-kCe">
+            <objects>
+                <viewController storyboardIdentifier="punView" id="kEG-Cl-tCU" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcT-8M-ern">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pun1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-3c-flD">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-dF-Hxd">
+                                <rect key="frame" x="291" y="588" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="kEG-Cl-tCU" eventType="touchUpInside" id="Eba-KV-azQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gDY-QM-iTa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" id="A7f-CJ-Rrf"/>
+                    <connections>
+                        <outlet property="punLabel" destination="pIs-3c-flD" id="qVC-aQ-GgU"/>
+                        <outlet property="punNextButton" destination="XZX-dF-Hxd" id="mFJ-BO-HJ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1v-fV-1i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="715.59220389805103"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Cce-f0-PPU">
             <objects>
@@ -88,6 +125,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jn6-9S-fGz"/>
                         <segue destination="bPl-v9-6Lm" kind="relationship" relationship="viewControllers" id="BDB-gz-PwW"/>
+                        <segue destination="kEG-Cl-tCU" kind="relationship" relationship="viewControllers" id="qmH-I0-rwf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epL-xj-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>

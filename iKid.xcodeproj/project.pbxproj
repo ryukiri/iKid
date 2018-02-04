@@ -13,6 +13,7 @@
 		D90611FC2027AA0E00EE6B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90611FB2027AA0E00EE6B79 /* Assets.xcassets */; };
 		D90611FF2027AA0E00EE6B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90611FD2027AA0E00EE6B79 /* LaunchScreen.storyboard */; };
 		D90612072027B79300EE6B79 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90612062027B79300EE6B79 /* GoodViewController.swift */; };
+		D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949A2027CB640017EB61 /* PunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D90611FE2027AA0E00EE6B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90612002027AA0E00EE6B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90612062027B79300EE6B79 /* GoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
+		D9D1949A2027CB640017EB61 /* PunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D90611F32027AA0E00EE6B79 /* iKid */ = {
 			isa = PBXGroup;
 			children = (
+				D9D1949A2027CB640017EB61 /* PunViewController.swift */,
 				D90611F42027AA0E00EE6B79 /* AppDelegate.swift */,
 				D90611F62027AA0E00EE6B79 /* ViewController.swift */,
 				D90612062027B79300EE6B79 /* GoodViewController.swift */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */,
 				D90611F72027AA0E00EE6B79 /* ViewController.swift in Sources */,
 				D90612072027B79300EE6B79 /* GoodViewController.swift in Sources */,
 				D90611F52027AA0E00EE6B79 /* AppDelegate.swift in Sources */,
