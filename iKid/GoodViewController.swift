@@ -33,9 +33,9 @@ class GoodViewController: UIViewController {
     */
     
     fileprivate var goodView : GoodViewController!
-    @IBOutlet weak var goodLabel: UILabel!
     @IBOutlet weak var goodNextButton: UIButton!
     var side = 0
+    @IBOutlet weak var goodTextView: UITextView!
     
     fileprivate func goodBuilder() {
         if goodView == nil {
@@ -56,14 +56,14 @@ class GoodViewController: UIViewController {
         if (side == 0) {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             goodView.view.frame = view.frame
-            goodLabel.text = "Yoda: Off course, we are."
+            goodTextView.text = "An hour later, he returns home with twelve loaves of bread."
             goodNextButton.setTitle("Back", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 1
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             goodView.view.frame = view.frame
-            goodLabel.text = "Luke Skywalker: Yoda, are we going in the right direction?"
+            goodTextView.text = "A computer programmer's wife sends her husband to the store. She says, \"Buy a loaf of bread. If they have eggs, get a dozen.\""
             goodNextButton.setTitle("Next", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 0

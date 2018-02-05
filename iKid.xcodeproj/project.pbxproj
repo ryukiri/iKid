@@ -15,6 +15,7 @@
 		D90612072027B79300EE6B79 /* GoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90612062027B79300EE6B79 /* GoodViewController.swift */; };
 		D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949A2027CB640017EB61 /* PunViewController.swift */; };
 		D9D1949D2027CCCF0017EB61 /* DadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949C2027CCCF0017EB61 /* DadViewController.swift */; };
+		D9D1949F2028531B0017EB61 /* KnockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949E2028531B0017EB61 /* KnockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D90612062027B79300EE6B79 /* GoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodViewController.swift; sourceTree = "<group>"; };
 		D9D1949A2027CB640017EB61 /* PunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunViewController.swift; sourceTree = "<group>"; };
 		D9D1949C2027CCCF0017EB61 /* DadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadViewController.swift; sourceTree = "<group>"; };
+		D9D1949E2028531B0017EB61 /* KnockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				D9D1949C2027CCCF0017EB61 /* DadViewController.swift */,
 				D9D1949A2027CB640017EB61 /* PunViewController.swift */,
+				D9D1949E2028531B0017EB61 /* KnockViewController.swift */,
 				D90611F42027AA0E00EE6B79 /* AppDelegate.swift */,
 				D90611F62027AA0E00EE6B79 /* ViewController.swift */,
 				D90612062027B79300EE6B79 /* GoodViewController.swift */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */,
+				D9D1949F2028531B0017EB61 /* KnockViewController.swift in Sources */,
 				D90611F72027AA0E00EE6B79 /* ViewController.swift in Sources */,
 				D90612072027B79300EE6B79 /* GoodViewController.swift in Sources */,
 				D90611F52027AA0E00EE6B79 /* AppDelegate.swift in Sources */,

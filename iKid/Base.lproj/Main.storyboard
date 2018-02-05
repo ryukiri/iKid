@@ -107,12 +107,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Skywalker: &quot;Yoda, are we going in the right direction?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-dE-mJI">
-                                <rect key="frame" x="19.666666666666657" y="398.66666666666669" width="336.33333333333337" height="14.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds8-OD-njc">
                                 <rect key="frame" x="331" y="687" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -120,27 +114,35 @@
                                     <action selector="switchViews:" destination="bPl-v9-6Lm" eventType="touchUpInside" id="40g-bU-ssu"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eMV-wI-zLZ">
+                                <rect key="frame" x="67" y="302" width="240" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="A computer programmer's wife sends her husband to the store. She says, &quot;Buy a loaf of bread. If they have eggs, get a dozen.&quot;" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-kE-mGM">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="209"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="6L3-dn-x8D"/>
-                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="Dol-Ya-wb6"/>
                             <constraint firstItem="hPZ-NV-ds5" firstAttribute="bottom" secondItem="ds8-OD-njc" secondAttribute="bottom" constant="12" id="KCx-5x-OSI"/>
-                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="NzI-wP-2tz"/>
                             <constraint firstItem="hPZ-NV-ds5" firstAttribute="trailing" secondItem="ds8-OD-njc" secondAttribute="trailing" constant="12" id="cZu-Uj-tLX"/>
-                            <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="ltw-w8-E3B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hPZ-NV-ds5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good" id="rvB-0P-0kE"/>
                     <connections>
-                        <outlet property="goodLabel" destination="UX6-dE-mJI" id="CVD-zk-Q9Z"/>
                         <outlet property="goodNextButton" destination="ds8-OD-njc" id="ahO-99-dUf"/>
+                        <outlet property="goodTextView" destination="fbq-kE-mGM" id="mfH-Iy-xM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wi-Ms-naB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144.8" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1144.8" y="31.773399014778327"/>
         </scene>
         <!--Pun-->
         <scene sceneID="Gdf-RC-kCe">
@@ -204,21 +206,47 @@
             </objects>
             <point key="canvasLocation" x="-267.19999999999999" y="32.383808095952027"/>
         </scene>
-        <!--Other-->
+        <!--Knock Knock-->
         <scene sceneID="Vvk-fb-zY7">
             <objects>
-                <viewController id="lRc-tP-kpv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6eZ-LC-QKR">
+                <viewController storyboardIdentifier="knockView" id="lRc-tP-kpv" customClass="KnockViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6eZ-LC-QKR" customClass="Knock">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-ZX-IZb">
+                                <rect key="frame" x="130" y="394" width="115" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-xG-Egj">
+                                <rect key="frame" x="331" y="711" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="lRc-tP-kpv" eventType="touchUpInside" id="BlN-sN-voL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BgL-r1-hSO" firstAttribute="trailing" secondItem="kkR-xG-Egj" secondAttribute="trailing" constant="12" id="Drw-1G-Xqz"/>
+                            <constraint firstItem="3TJ-ZX-IZb" firstAttribute="centerX" secondItem="6eZ-LC-QKR" secondAttribute="centerX" id="b4l-Rc-Hyq"/>
+                            <constraint firstItem="3TJ-ZX-IZb" firstAttribute="centerY" secondItem="6eZ-LC-QKR" secondAttribute="centerY" id="bBg-Rx-2XR"/>
+                            <constraint firstItem="BgL-r1-hSO" firstAttribute="bottom" secondItem="kkR-xG-Egj" secondAttribute="bottom" constant="12" id="ehW-F8-fTh"/>
+                            <constraint firstItem="kkR-xG-Egj" firstAttribute="bottom" secondItem="BgL-r1-hSO" secondAttribute="bottom" constant="12" id="m8x-ru-M4U"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BgL-r1-hSO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Other" id="QsB-ow-EHA"/>
+                    <tabBarItem key="tabBarItem" title="Knock Knock" id="QsB-ow-EHA"/>
+                    <connections>
+                        <outlet property="knockLabel" destination="3TJ-ZX-IZb" id="ISu-o7-Ssf"/>
+                        <outlet property="knockNextButton" destination="kkR-xG-Egj" id="Q9q-6p-RM2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqD-E1-k1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-289" y="862"/>
+            <point key="canvasLocation" x="-290.39999999999998" y="861.57635467980299"/>
         </scene>
     </scenes>
 </document>
