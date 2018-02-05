@@ -33,10 +33,10 @@ class PunViewController: UIViewController {
     */
     
     fileprivate var punView : PunViewController!
-    @IBOutlet weak var punLabel: UILabel!
     @IBOutlet weak var punNextButton: UIButton!
+    @IBOutlet weak var punTextView: UITextView!
     var side = 0
-    
+
     fileprivate func punBuilder() {
         if punView == nil {
             punView =
@@ -56,14 +56,14 @@ class PunViewController: UIViewController {
         if (side == 0) {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             punView.view.frame = view.frame
-            punLabel.text = "Pun2"
+            punTextView.text = "You have my Word."
             punNextButton.setTitle("Back", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 1
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             punView.view.frame = view.frame
-            punLabel.text = "Pun1"
+            punTextView.text = "Whoever stole my copy of Microsoft Office is in big trouble"
             punNextButton.setTitle("Next", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 0

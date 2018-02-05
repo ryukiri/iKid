@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dWf-g2-9YV">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,6 +13,9 @@
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
         </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Home-->
@@ -20,20 +23,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iHa-52-Frv">
-                                <rect key="frame" x="72.5" y="302" width="230" height="63"/>
+                                <rect key="frame" x="54.333333333333343" y="371.33333333333331" width="266.66666666666663" height="69.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iKid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMq-lq-Q7v">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="42.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="266.66666666666669" height="49.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a category to continue." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2y-cF-pLP">
-                                        <rect key="frame" x="0.5" y="42.5" width="229" height="20.5"/>
+                                        <rect key="frame" x="18.999999999999986" y="49.333333333333371" width="228.66666666666663" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -59,19 +62,18 @@
             <objects>
                 <viewController storyboardIdentifier="dadView" id="neL-Ch-nW0" customClass="DadViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yey-Cz-qOg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTr-Jl-vN8">
-                                <rect key="frame" x="262" y="588" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTr-Jl-vN8">
+                                <rect key="frame" x="331" y="687" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchViews:" destination="neL-Ch-nW0" eventType="touchUpInside" id="ZqZ-Md-pS0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
-                                <rect key="frame" x="168" y="323" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a Mexican who lost his car?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
+                                <rect key="frame" x="17" y="395.66666666666669" width="341" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,8 +81,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="gGe-nJ-xO4" firstAttribute="bottom" secondItem="UTr-Jl-vN8" secondAttribute="bottom" constant="60" id="0L9-gu-bWw"/>
                             <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerY" secondItem="Yey-Cz-qOg" secondAttribute="centerY" id="F8f-GV-omo"/>
                             <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerX" secondItem="Yey-Cz-qOg" secondAttribute="centerX" id="P3T-2K-rn7"/>
+                            <constraint firstItem="gGe-nJ-xO4" firstAttribute="trailing" secondItem="UTr-Jl-vN8" secondAttribute="trailing" constant="12" id="TGh-5f-foF"/>
+                            <constraint firstItem="gGe-nJ-xO4" firstAttribute="bottom" secondItem="UTr-Jl-vN8" secondAttribute="bottom" constant="12" id="whk-bA-R8N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gGe-nJ-xO4"/>
                     </view>
@@ -99,18 +104,17 @@
             <objects>
                 <viewController storyboardIdentifier="goodView" id="bPl-v9-6Lm" customClass="GoodViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BTo-T9-mDH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luke Skywalker: &quot;Yoda, are we going in the right direction?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-dE-mJI">
-                                <rect key="frame" x="19.5" y="326.5" width="336.5" height="14.5"/>
+                                <rect key="frame" x="19.666666666666657" y="398.66666666666669" width="336.33333333333337" height="14.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds8-OD-njc">
-                                <rect key="frame" x="280" y="575" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds8-OD-njc">
+                                <rect key="frame" x="331" y="687" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchViews:" destination="bPl-v9-6Lm" eventType="touchUpInside" id="40g-bU-ssu"/>
@@ -121,7 +125,9 @@
                         <constraints>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="6L3-dn-x8D"/>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="Dol-Ya-wb6"/>
+                            <constraint firstItem="hPZ-NV-ds5" firstAttribute="bottom" secondItem="ds8-OD-njc" secondAttribute="bottom" constant="12" id="KCx-5x-OSI"/>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="NzI-wP-2tz"/>
+                            <constraint firstItem="hPZ-NV-ds5" firstAttribute="trailing" secondItem="ds8-OD-njc" secondAttribute="trailing" constant="12" id="cZu-Uj-tLX"/>
                             <constraint firstItem="UX6-dE-mJI" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="ltw-w8-E3B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hPZ-NV-ds5"/>
@@ -141,35 +147,35 @@
             <objects>
                 <viewController storyboardIdentifier="punView" id="kEG-Cl-tCU" customClass="PunViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rcT-8M-ern">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pun1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-3c-flD">
-                                <rect key="frame" x="169.5" y="323" width="36.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-dF-Hxd">
-                                <rect key="frame" x="291" y="588" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZX-dF-Hxd">
+                                <rect key="frame" x="331" y="687" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="switchViews:" destination="kEG-Cl-tCU" eventType="touchUpInside" id="Eba-KV-azQ"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Whoever stole my copy of Microsoft Office is in big trouble" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEC-9B-sC4">
+                                <rect key="frame" x="67" y="269" width="240" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pIs-3c-flD" firstAttribute="centerY" secondItem="rcT-8M-ern" secondAttribute="centerY" id="KjS-44-2Mw"/>
-                            <constraint firstItem="pIs-3c-flD" firstAttribute="centerX" secondItem="rcT-8M-ern" secondAttribute="centerX" id="xwj-pC-neR"/>
+                            <constraint firstItem="gDY-QM-iTa" firstAttribute="bottom" secondItem="XZX-dF-Hxd" secondAttribute="bottom" constant="12" id="2dl-4d-u9L"/>
+                            <constraint firstItem="gDY-QM-iTa" firstAttribute="trailing" secondItem="XZX-dF-Hxd" secondAttribute="trailing" constant="12" id="lhA-QQ-LvN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gDY-QM-iTa"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" id="A7f-CJ-Rrf"/>
                     <connections>
-                        <outlet property="punLabel" destination="pIs-3c-flD" id="qVC-aQ-GgU"/>
                         <outlet property="punNextButton" destination="XZX-dF-Hxd" id="mFJ-BO-HJ2"/>
+                        <outlet property="punTextView" destination="bEC-9B-sC4" id="5OE-Ot-2Fl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1v-fV-1i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -191,11 +197,28 @@
                         <segue destination="bPl-v9-6Lm" kind="relationship" relationship="viewControllers" id="BDB-gz-PwW"/>
                         <segue destination="kEG-Cl-tCU" kind="relationship" relationship="viewControllers" id="qmH-I0-rwf"/>
                         <segue destination="neL-Ch-nW0" kind="relationship" relationship="viewControllers" id="ffE-rM-vcW"/>
+                        <segue destination="lRc-tP-kpv" kind="relationship" relationship="viewControllers" id="2UO-Ea-9vi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epL-xj-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-267.19999999999999" y="32.383808095952027"/>
+        </scene>
+        <!--Other-->
+        <scene sceneID="Vvk-fb-zY7">
+            <objects>
+                <viewController id="lRc-tP-kpv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6eZ-LC-QKR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BgL-r1-hSO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Other" id="QsB-ow-EHA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqD-E1-k1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="862"/>
         </scene>
     </scenes>
 </document>

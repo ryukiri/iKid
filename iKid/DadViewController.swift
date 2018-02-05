@@ -56,14 +56,14 @@ class DadViewController: UIViewController {
         if (side == 0) {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             dadView.view.frame = view.frame
-            dadLabel.text = "Dad2"
+            dadLabel.text = "Carlos."
             dadNextButton.setTitle("Back", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 1
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             dadView.view.frame = view.frame
-            dadLabel.text = "Dad1"
+            dadLabel.text = "What do you call a Mexican who lost his car?"
             dadNextButton.setTitle("Next", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 0
