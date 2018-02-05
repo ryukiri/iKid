@@ -34,6 +34,8 @@ class DadViewController: UIViewController {
 
     fileprivate var dadView : DadViewController!
     @IBOutlet weak var dadLabel: UILabel!
+    @IBOutlet weak var dadLabel2: UILabel!
+    
     @IBOutlet weak var dadNextButton: UIButton!
     var side = 0
     
@@ -57,13 +59,15 @@ class DadViewController: UIViewController {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             dadView.view.frame = view.frame
             dadLabel.text = "Carlos."
+            dadLabel2.text = ""
             dadNextButton.setTitle("Back", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 1
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             dadView.view.frame = view.frame
-            dadLabel.text = "What do you call a Mexican who lost his car?"
+            dadLabel.text = "What do you call a"
+            dadLabel2.text = "Mexican who lost his car?"
             dadNextButton.setTitle("Next", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 0

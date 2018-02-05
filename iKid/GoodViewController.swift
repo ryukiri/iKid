@@ -34,8 +34,15 @@ class GoodViewController: UIViewController {
     
     fileprivate var goodView : GoodViewController!
     @IBOutlet weak var goodNextButton: UIButton!
+    
+    @IBOutlet weak var goodLabel: UILabel!
+    @IBOutlet weak var goodLabel2: UILabel!
+    @IBOutlet weak var goodLabel3: UILabel!
+    @IBOutlet weak var goodLabel4: UILabel!
+    @IBOutlet weak var goodLabel5: UILabel!
+    @IBOutlet weak var goodLabel7: UILabel!
+    
     var side = 0
-    @IBOutlet weak var goodTextView: UITextView!
     
     fileprivate func goodBuilder() {
         if goodView == nil {
@@ -56,14 +63,24 @@ class GoodViewController: UIViewController {
         if (side == 0) {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             goodView.view.frame = view.frame
-            goodTextView.text = "An hour later, he returns home with twelve loaves of bread."
+            goodLabel.text = "An hour later,"
+            goodLabel2.text = "he returns from the store"
+            goodLabel3.text = "with a dozen loaves"
+            goodLabel4.text = "of bread."
+            goodLabel5.text = ""
+            goodLabel7.text = ""
             goodNextButton.setTitle("Back", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 1
         } else {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             goodView.view.frame = view.frame
-            goodTextView.text = "A computer programmer's wife sends her husband to the store. She says, \"Buy a loaf of bread. If they have eggs, get a dozen.\""
+            goodLabel.text = "A computer programmer's"
+            goodLabel2.text = "wife sends her husband"
+            goodLabel3.text = "to the store."
+            goodLabel4.text = "She says, \"Buy a loaf of"
+            goodLabel5.text = "bread. If they have eggs, get"
+            goodLabel7.text = "a dozen\""
             goodNextButton.setTitle("Next", for: UIControlState.normal)
             UIView.commitAnimations()
             side = 0

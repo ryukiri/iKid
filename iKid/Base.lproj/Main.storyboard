@@ -72,18 +72,29 @@
                                     <action selector="switchViews:" destination="neL-Ch-nW0" eventType="touchUpInside" id="ZqZ-Md-pS0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a Mexican who lost his car?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
-                                <rect key="frame" x="17" y="395.66666666666669" width="341" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nTq-mL-6yR">
+                                <rect key="frame" x="60.666666666666657" y="379" width="253.99999999999997" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Pn-tlw">
+                                        <rect key="frame" x="37.666666666666671" y="0.0" width="178.66666666666663" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mexican who lost his car?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgT-oS-1fh">
+                                        <rect key="frame" x="0.0" y="26.333333333333314" width="254" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gGe-nJ-xO4" firstAttribute="bottom" secondItem="UTr-Jl-vN8" secondAttribute="bottom" constant="60" id="0L9-gu-bWw"/>
-                            <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerY" secondItem="Yey-Cz-qOg" secondAttribute="centerY" id="F8f-GV-omo"/>
-                            <constraint firstItem="ZO0-Pn-tlw" firstAttribute="centerX" secondItem="Yey-Cz-qOg" secondAttribute="centerX" id="P3T-2K-rn7"/>
+                            <constraint firstItem="nTq-mL-6yR" firstAttribute="centerY" secondItem="Yey-Cz-qOg" secondAttribute="centerY" id="0Y4-Ly-Cmn"/>
+                            <constraint firstItem="nTq-mL-6yR" firstAttribute="centerX" secondItem="Yey-Cz-qOg" secondAttribute="centerX" id="BdC-aP-jp1"/>
                             <constraint firstItem="gGe-nJ-xO4" firstAttribute="trailing" secondItem="UTr-Jl-vN8" secondAttribute="trailing" constant="12" id="TGh-5f-foF"/>
                             <constraint firstItem="gGe-nJ-xO4" firstAttribute="bottom" secondItem="UTr-Jl-vN8" secondAttribute="bottom" constant="12" id="whk-bA-R8N"/>
                         </constraints>
@@ -92,6 +103,7 @@
                     <tabBarItem key="tabBarItem" title="Dad" id="JVw-JD-f4f"/>
                     <connections>
                         <outlet property="dadLabel" destination="ZO0-Pn-tlw" id="nfn-b2-1fD"/>
+                        <outlet property="dadLabel2" destination="JgT-oS-1fh" id="6ZZ-mO-DJR"/>
                         <outlet property="dadNextButton" destination="UTr-Jl-vN8" id="atE-Ih-JpM"/>
                     </connections>
                 </viewController>
@@ -114,30 +126,68 @@
                                     <action selector="switchViews:" destination="bPl-v9-6Lm" eventType="touchUpInside" id="40g-bU-ssu"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eMV-wI-zLZ">
-                                <rect key="frame" x="67" y="302" width="240" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4p4-yp-bWG">
+                                <rect key="frame" x="12" y="323" width="351" height="166"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="A computer programmer's wife sends her husband to the store. She says, &quot;Buy a loaf of bread. If they have eggs, get a dozen.&quot;" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-kE-mGM">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="209"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A computer programmer's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNY-bX-gj2">
+                                        <rect key="frame" x="46.333333333333343" y="0.0" width="258.33333333333326" height="27.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wife sends her husband " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gek-Vu-8Nr">
+                                        <rect key="frame" x="55.666666666666686" y="27.666666666666686" width="240" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to the store." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NH-yw-fnk">
+                                        <rect key="frame" x="116.66666666666666" y="55.333333333333307" width="117.66666666666666" height="27.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="She says, &quot;Buy a loaf of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiK-tE-gOQ">
+                                        <rect key="frame" x="60.000000000000014" y="83" width="231.33333333333337" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bread. If they have eggs, get" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-fF-5sM">
+                                        <rect key="frame" x="36.333333333333343" y="110.66666666666669" width="278.66666666666663" height="27.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a dozen.&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyL-1I-QYV">
+                                        <rect key="frame" x="129.66666666666666" y="138.33333333333331" width="92" height="27.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="4p4-yp-bWG" firstAttribute="leading" secondItem="hPZ-NV-ds5" secondAttribute="leading" constant="12" id="JfM-00-5Rf"/>
                             <constraint firstItem="hPZ-NV-ds5" firstAttribute="bottom" secondItem="ds8-OD-njc" secondAttribute="bottom" constant="12" id="KCx-5x-OSI"/>
+                            <constraint firstItem="4p4-yp-bWG" firstAttribute="centerX" secondItem="BTo-T9-mDH" secondAttribute="centerX" id="NNp-5h-mVg"/>
+                            <constraint firstItem="hPZ-NV-ds5" firstAttribute="trailing" secondItem="4p4-yp-bWG" secondAttribute="trailing" constant="12" id="X8D-pg-tYp"/>
                             <constraint firstItem="hPZ-NV-ds5" firstAttribute="trailing" secondItem="ds8-OD-njc" secondAttribute="trailing" constant="12" id="cZu-Uj-tLX"/>
+                            <constraint firstItem="4p4-yp-bWG" firstAttribute="centerY" secondItem="BTo-T9-mDH" secondAttribute="centerY" id="sUz-2U-U31"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hPZ-NV-ds5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Good" id="rvB-0P-0kE"/>
                     <connections>
+                        <outlet property="goodLabel" destination="NNY-bX-gj2" id="WN7-6j-617"/>
+                        <outlet property="goodLabel2" destination="gek-Vu-8Nr" id="K2x-7t-A8I"/>
+                        <outlet property="goodLabel3" destination="7NH-yw-fnk" id="GB6-Ki-J7C"/>
+                        <outlet property="goodLabel4" destination="UiK-tE-gOQ" id="Z8G-VK-5R2"/>
+                        <outlet property="goodLabel5" destination="nQv-fF-5sM" id="LfQ-h3-9ZC"/>
+                        <outlet property="goodLabel7" destination="QyL-1I-QYV" id="OYT-5Z-F33"/>
                         <outlet property="goodNextButton" destination="ds8-OD-njc" id="ahO-99-dUf"/>
-                        <outlet property="goodTextView" destination="fbq-kE-mGM" id="mfH-Iy-xM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8wi-Ms-naB" userLabel="First Responder" sceneMemberID="firstResponder"/>
