@@ -13,9 +13,6 @@
         <array key="Avenir.ttc">
             <string>Avenir-Book</string>
         </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Home-->
@@ -209,25 +206,45 @@
                                     <action selector="switchViews:" destination="kEG-Cl-tCU" eventType="touchUpInside" id="Eba-KV-azQ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Whoever stole my copy of Microsoft Office is in big trouble" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEC-9B-sC4">
-                                <rect key="frame" x="67" y="269" width="240" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W7A-GA-zl3">
+                                <rect key="frame" x="76.666666666666686" y="366.66666666666669" width="222" height="79"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whoever stole my copy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-Xh-fXh">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of Microsoft Office is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeZ-Ni-FKJ">
+                                        <rect key="frame" x="12" y="26.333333333333314" width="197.66666666666666" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in big trouble." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLx-NX-xWf">
+                                        <rect key="frame" x="46.333333333333329" y="52.666666666666636" width="129" height="26.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gDY-QM-iTa" firstAttribute="bottom" secondItem="XZX-dF-Hxd" secondAttribute="bottom" constant="12" id="2dl-4d-u9L"/>
+                            <constraint firstItem="W7A-GA-zl3" firstAttribute="centerY" secondItem="rcT-8M-ern" secondAttribute="centerY" id="52C-M7-yyF"/>
                             <constraint firstItem="gDY-QM-iTa" firstAttribute="trailing" secondItem="XZX-dF-Hxd" secondAttribute="trailing" constant="12" id="lhA-QQ-LvN"/>
+                            <constraint firstItem="W7A-GA-zl3" firstAttribute="centerX" secondItem="rcT-8M-ern" secondAttribute="centerX" id="z0r-8c-FZi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gDY-QM-iTa"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pun" id="A7f-CJ-Rrf"/>
                     <connections>
+                        <outlet property="punLabel" destination="Gdr-Xh-fXh" id="5X5-rw-Z5r"/>
+                        <outlet property="punLabel2" destination="AeZ-Ni-FKJ" id="g8k-yf-OLJ"/>
+                        <outlet property="punLabel3" destination="HLx-NX-xWf" id="mFX-FR-W4R"/>
                         <outlet property="punNextButton" destination="XZX-dF-Hxd" id="mFJ-BO-HJ2"/>
-                        <outlet property="punTextView" destination="bEC-9B-sC4" id="5OE-Ot-2Fl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1v-fV-1i0" userLabel="First Responder" sceneMemberID="firstResponder"/>
