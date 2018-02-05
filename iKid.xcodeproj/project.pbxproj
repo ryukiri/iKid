@@ -16,6 +16,9 @@
 		D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949A2027CB640017EB61 /* PunViewController.swift */; };
 		D9D1949D2027CCCF0017EB61 /* DadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949C2027CCCF0017EB61 /* DadViewController.swift */; };
 		D9D1949F2028531B0017EB61 /* KnockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1949E2028531B0017EB61 /* KnockViewController.swift */; };
+		D9D194A120285DBF0017EB61 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D194A020285DBF0017EB61 /* ImageViewController.swift */; };
+		D9D194A420285E340017EB61 /* work.png in Resources */ = {isa = PBXBuildFile; fileRef = D9D194A220285E340017EB61 /* work.png */; };
+		D9D194A520285E340017EB61 /* noWork.png in Resources */ = {isa = PBXBuildFile; fileRef = D9D194A320285E340017EB61 /* noWork.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D9D1949A2027CB640017EB61 /* PunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunViewController.swift; sourceTree = "<group>"; };
 		D9D1949C2027CCCF0017EB61 /* DadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadViewController.swift; sourceTree = "<group>"; };
 		D9D1949E2028531B0017EB61 /* KnockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnockViewController.swift; sourceTree = "<group>"; };
+		D9D194A020285DBF0017EB61 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		D9D194A220285E340017EB61 /* work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = work.png; sourceTree = "<group>"; };
+		D9D194A320285E340017EB61 /* noWork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noWork.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,11 @@
 		D90611F32027AA0E00EE6B79 /* iKid */ = {
 			isa = PBXGroup;
 			children = (
+				D9D194A320285E340017EB61 /* noWork.png */,
+				D9D194A220285E340017EB61 /* work.png */,
 				D9D1949C2027CCCF0017EB61 /* DadViewController.swift */,
 				D9D1949A2027CB640017EB61 /* PunViewController.swift */,
+				D9D194A020285DBF0017EB61 /* ImageViewController.swift */,
 				D9D1949E2028531B0017EB61 /* KnockViewController.swift */,
 				D90611F42027AA0E00EE6B79 /* AppDelegate.swift */,
 				D90611F62027AA0E00EE6B79 /* ViewController.swift */,
@@ -137,6 +146,8 @@
 			files = (
 				D90611FF2027AA0E00EE6B79 /* LaunchScreen.storyboard in Resources */,
 				D90611FC2027AA0E00EE6B79 /* Assets.xcassets in Resources */,
+				D9D194A420285E340017EB61 /* work.png in Resources */,
+				D9D194A520285E340017EB61 /* noWork.png in Resources */,
 				D90611FA2027AA0E00EE6B79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +162,7 @@
 				D9D1949B2027CB640017EB61 /* PunViewController.swift in Sources */,
 				D9D1949F2028531B0017EB61 /* KnockViewController.swift in Sources */,
 				D90611F72027AA0E00EE6B79 /* ViewController.swift in Sources */,
+				D9D194A120285DBF0017EB61 /* ImageViewController.swift in Sources */,
 				D90612072027B79300EE6B79 /* GoodViewController.swift in Sources */,
 				D90611F52027AA0E00EE6B79 /* AppDelegate.swift in Sources */,
 				D9D1949D2027CCCF0017EB61 /* DadViewController.swift in Sources */,

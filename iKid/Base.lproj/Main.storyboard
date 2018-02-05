@@ -267,11 +267,52 @@
                         <segue destination="kEG-Cl-tCU" kind="relationship" relationship="viewControllers" id="qmH-I0-rwf"/>
                         <segue destination="neL-Ch-nW0" kind="relationship" relationship="viewControllers" id="ffE-rM-vcW"/>
                         <segue destination="lRc-tP-kpv" kind="relationship" relationship="viewControllers" id="2UO-Ea-9vi"/>
+                        <segue destination="bcx-Sa-8ll" kind="relationship" relationship="viewControllers" id="kkX-mF-G6T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epL-xj-gfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-267.19999999999999" y="32.383808095952027"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="Eh0-wg-rAE">
+            <objects>
+                <viewController storyboardIdentifier="imageView" id="bcx-Sa-8ll" customClass="ImageViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nvb-aE-dVi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-2T-Jt5">
+                                <rect key="frame" x="331" y="687" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="switchViews:" destination="bcx-Sa-8ll" eventType="touchUpInside" id="s4h-uv-59f"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="noWork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nhb-2B-lQC">
+                                <rect key="frame" x="19" y="306" width="336" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nhb-2B-lQC" firstAttribute="centerX" secondItem="nvb-aE-dVi" secondAttribute="centerX" id="0QC-GQ-qMf"/>
+                            <constraint firstItem="Nhb-2B-lQC" firstAttribute="leading" secondItem="meh-s6-hNE" secondAttribute="leading" constant="67" id="1Pv-IC-HsG"/>
+                            <constraint firstItem="meh-s6-hNE" firstAttribute="trailing" secondItem="cAd-2T-Jt5" secondAttribute="trailing" constant="12" id="5I8-NU-A2c"/>
+                            <constraint firstItem="Nhb-2B-lQC" firstAttribute="centerY" secondItem="nvb-aE-dVi" secondAttribute="centerY" id="HhF-P7-EG1"/>
+                            <constraint firstItem="meh-s6-hNE" firstAttribute="bottom" secondItem="cAd-2T-Jt5" secondAttribute="bottom" constant="12" id="MYm-kM-dXE"/>
+                            <constraint firstItem="Nhb-2B-lQC" firstAttribute="top" secondItem="meh-s6-hNE" secondAttribute="top" constant="298" id="h7A-PR-gFv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="meh-s6-hNE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Image" id="LC8-7R-Tf1"/>
+                    <connections>
+                        <outlet property="imageView" destination="Nhb-2B-lQC" id="pcW-gk-85T"/>
+                        <outlet property="nextButton" destination="cAd-2T-Jt5" id="Dfa-tx-3E4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Day-bi-8E8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1260" y="630.29556650246309"/>
         </scene>
         <!--Knock Knock-->
         <scene sceneID="Vvk-fb-zY7">
@@ -316,4 +357,7 @@
             <point key="canvasLocation" x="-290.39999999999998" y="861.57635467980299"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noWork.png" width="565" height="427"/>
+    </resources>
 </document>
